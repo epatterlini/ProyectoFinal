@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codo a Codo</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+</head>
+<header class="header container-fluid">
+    <section>
+        <img class="bg" src="Imagenes/pngegg4.png" alt="">
+        <img class="esp" src="Imagenes/pngegg1.png" alt="">
+        <div class="menu">
+            <h1>Locos x la pizza!</h1>
+            <label for="menu"><img src="Imagenes/pngegg3.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#speech">Contacto</a></li>
+                    <li><a href="#Contacto">Carta</a></li>
+                    <li><a href="#nom1">Redes Sociales</a></li>
+                    <li><a href="#Pedido" onclick="window.open('/Pedido.html')">Tu Pedido</a></li>
+                    <li><a href="vistas/login.jsp"><span class="ticket">Login</span></a></li>                
+                </ul>
+            </nav>
+        </div>
+    </section>
+</header>
+
+<body>
+    <div class="header-content container-fluid">
+        <div class="header-info">
+            <div class="header-txt">
+                <h1>Tu pizza favorita a domicilio, siempre la mejor opción</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quas sequi amet architecto
+                    dignissimos porro a ratione asperiores quibusdam quidem, quaerat est consequatur libero facere
+                    exercitationem! Deleniti fugiat nihil ullam!
+                </p>
+            </div>
+            <div class="header-img">
+                <img src="#" alt="">
+            </div>
+        </div>
+    </div>
+    <section class="nosotros container-fluid">
+
+        <img class="bg-2" src="Imagenes/pngegg3.png" alt="">
+
+        <div class="nosotros-info">
+
+            <div class="nosotros-txt">
+
+                <h2>La mejor pizza! con los ingredientes de primera calidad</h2>
+                <p id="speech">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nihil ab nobis molestias maiores esse
+                    assumenda quasi non, facilis, enim iure quas ex molestiae ullam impedit repellat adipisci animi?
+                    Dolorem!
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section class="info container-fluid">
+        <div class="info-1">
+            <img src="Imagenes/pngiconhora.png" alt="">
+            <h3>Horario</h3>
+            <p>lunes a viernes 09:00am a 23:00pm</p>
+        </div>
+
+        <div class="info-1">
+            <img src="Imagenes/pngicongps.png" alt="">
+            <h3>Ubicación</h3>
+            <p>Cordoba Capital</p>
+        </div>
+
+        <div class="info-1">
+            <img src="Imagenes/pngiconcontact.png" alt="">
+            <h3 id="Contacto">Contacto</h3>
+            <p>351-54545454</p>
+        </div>
+
+    </section>
+    <section class="anotate" id="anotate">
+        <h3>CONVIÉRTETE EN UN</h3>
+        <h2>CLIENTE NUESTRO!</h2>
+        <p>¡Y disfrutá de nuestros descuentos!</p>
+        <form action="registroUsuarios" method="post">
+            <div class="inputGroup">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+            </div>
+            <textarea name="tema" id="NumCliente" cols="30" rows="1"
+                placeholder="Inicial del Nombre, inicial  del Apellido y DNI"></textarea>
+            <p class="info">El número de documento se escribe sin puntos</p>
+            <input type="submit" id="btnEnviar" value="Enviar">
+        </form>
+    </section>
+
+    <main class="products cotainer-fluid">
+
+        <h2>Productos</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur minima voluptate nisi assumenda
+            laborum vel commodi provident tempore labore vitae placeat excepturi, iste soluta animi. Perspiciatis sed a
+            vitae placeat?
+        </p>
+
+        <div class="product-info">
+            <div class="product">
+                <img src="Imagenes/pizza1.jpg" alt="" onclick="seleccion()">
+                <h3>pizza loca champi</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur minima voluptate nisi
+                    assumenda
+                    laborum vel commodi provident tempore labore vitae placeat excepturi, iste soluta animi. Perspiciati
+                </p>
+                <span id="precio">600</span>
+            </div>
+
+            <div class="product">
+                <img src="Imagenes/pizza2.jpg" alt="">
+                <h3>pizza loca rucula</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur minima voluptate nisi
+                    assumenda
+                    laborum vel commodi provident tempore labore vitae placeat excepturi, iste soluta animi. Perspiciati
+                </p>
+                <span>$600</span>
+            </div>
+
+            <div class="product">
+                <img src="Imagenes/pizza3.jpg" alt="">
+                <h3>pizza loca anchoas</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur minima voluptate nisi
+                    assumenda
+                    laborum vel commodi provident tempore labore vitae placeat excepturi, iste soluta animi. Perspiciati
+
+                </p>
+                <span>$600</span>
+            </div>
+
+            <div class="product">
+                <img src="Imagenes/pizza7.jpg" alt="">
+                <h3>pizza loca fugazza</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur minima voluptate nisi
+                    assumenda
+                    laborum vel commodi provident tempore labore vitae placeat excepturi, iste soluta animi. Perspiciati
+
+                </p>
+                <span>$600</span>
+            </div>
+
+            <div class="product">
+                <img src="Imagenes/pizza5.jpg" alt="">
+                <h3>pizza loca clasica de jamon</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur minima voluptate nisi
+                    assumenda
+                    laborum vel commodi provident tempore labore vitae placeat excepturi, iste soluta animi. Perspiciati
+
+                </p>
+                <span>$600</span>
+            </div>
+
+            <div class="product">
+                <img src="Imagenes/pizza6.jpg" alt="">
+                <h3>pizza loca 8 sabores</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur minima voluptate nisi
+                    assumenda
+                    laborum vel commodi provident tempore labore vitae placeat excepturi, iste soluta animi. Perspiciati
+                </p>
+                <span>$600</span>
+            </div>
+
+        </div>
+
+    </main>
+    <footer class="footer container-fluid">
+       <div class="footer-links">
+            <div class="link">
+                <h2>Nuestras redes sociales</h2>
+
+                <div class="socials">
+                    <li>
+                        <img class="icon" src="Imagenes/pngegg (6)icon1.png" alt=""><a href="https://www.facebook.com/"
+                            target="_blank">Facebook</a>
+                        <img class="icon" src="Imagenes/pngegg (6)icon2.png" alt=""><a href="https://www.instagram.com/"
+                            target="_blank">Instagram</a>
+                        <img class="icon" src="Imagenes/pngegg (6)icon3.png" alt=""><a
+                            href="https://www.whatsapp.com/?lang=es" target="_blank">Whatsapp</a>
+                        <div class="form">
+                            <h4>Envianos tu opinión!</h4>
+                            <p1 id="nom1">Nombre: <input type="text" name="nombre" /></p1>
+                            <p2>Correo: <input type="text" name="correo" id="corr" /></p2><br>
+                            <textarea name="coment" id="com" cols="30" rows="10"></textarea><br>
+                            <input id="env" type="submit" value="Enviar" onclick="eje1()" />
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

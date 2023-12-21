@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+section.anotate {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+section.anotate h3 {   
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+section.anotate h2 {
+    font-size: 2.3em;
+    font-weight: 600;
+    margin: 5px 0px 15px 0px;
+}
+
+section.anotate p { 
+    margin-bottom: 10px;
+}
+
+a.ignite, a.ignite:visited, a.ignite:active {   
+    color: #2d3644;
+    text-decoration: none;
+    border-bottom: 2px black dotted;     
+}
+
+form {
+    width: 50vw;
+}
+
+form .inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form input,
+ textarea { 
+    border: 0.1px solid rgb(213 213 213);
+    border-radius: 5px;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    resize: none;
+}
+
+form input {
+    width: 48%;
+    margin-bottom: 20px;
+    font-size: 1em !important;
+    font-weight: 500;
+}
+
+form textarea {
+    width: 100%;
+    font-size: 1.3em !important;
+    font-weight: 500;
+
+}
+
+form p {
+    font-size: 0.8em;
+    margin-bottom: 20px !important;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    font-size: 1.4em !important;
+    font-weight: 500;
+    padding: 20px;
+    color: #fff;
+    background: #96c93e;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@keyframes slide{
+    0%{margin-left: 0;}
+    30%{margin-left: 0;}
+    
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+      
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+  .slider, .slider ul, .slider img{
+      height: 100vh;
+  }
+}
